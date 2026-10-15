@@ -1,0 +1,6 @@
+{
+  "name": "Game Zone",
+  "description": "Production-grade Web Gaming Hub featuring Water Sort puzzle, live performance telemetry engine, and comprehensive technical architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

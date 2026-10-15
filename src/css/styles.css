@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: #f8fafc;
+    color: #262626;
+  }
+}
+
+/* High-Brightness Active Nav & Highlight Utilities */
+.nav-active-glow {
+  color: rgb(6 182 212);
+  filter: drop-shadow(0 0 12px rgba(6, 182, 212, 0.6)) brightness(1.25);
+}
+
+.glow-cyan-hover {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glow-cyan-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(6, 182, 212, 0.35);
+}
+
+.glow-pink-hover {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glow-pink-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(236, 72, 153, 0.35);
+}
+
+.luxury-card {
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  border: 1px solid #f1f5f9;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+.luxury-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(6, 182, 212, 0.25);
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+.neon-circle-pulse {
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.45), inset 0 0 15px rgba(6, 182, 212, 0.25);
+}
